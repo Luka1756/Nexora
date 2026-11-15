@@ -1,0 +1,55 @@
+/* Design tokens. Change colours, spacing and type here, not in components. */
+
+:root {
+  color-scheme: light dark;
+
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --bg: #ffffff;
+  --surface: #f6f8fa;
+  --border: #d0d7de;
+  --text: #1f2328;
+  --text-muted: #59636e;
+
+  /* Restrained cyan accent. #0e7490 gives 5.4:1 against white (WCAG AA for text). */
+  --accent: #0e7490;
+  --accent-hover: #155e75;
+  --accent-soft: #ecfeff;
+  --on-accent: #ffffff;
+
+  --radius: 8px;
+  --radius-sm: 6px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  --container: 70rem;
+  --gutter: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --surface: #151b23;
+    --border: #2d333b;
+    --text: #e6edf3;
+    --text-muted: #9aa4b0;
+
+    --accent: #22d3ee;
+    --accent-hover: #67e8f9;
+    --accent-soft: rgba(34, 211, 238, 0.1);
+    --on-accent: #042f3a;
+  }
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --gutter: 1.5rem;
+  }
+}
